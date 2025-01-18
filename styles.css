@@ -1,0 +1,315 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d9d9d9;
+  color: #333;
+  line-height: 1.6;
+}
+
+#about p {
+  margin-bottom: 15px; /* Add space between paragraphs */
+  line-height: 1.6; /* Improve readability */
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #000305, #004080);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+/* Navigation Bar */
+nav {
+  background: #004080;
+  color: white;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 5px;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #507e95;
+}
+
+/* Sections */
+section {
+  background: #2a2a2a;
+  color: white;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+section p, section li {
+  font-size: 1.1em;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #004080;
+  color: white;
+  padding: 10px 0;
+}
+
+/* Slideshow Container */
+.slideshow-container {
+  position: relative;
+  max-width: 800px;
+  margin: 20px auto;
+  overflow: hidden; /* Hide overflowing slides */
+}
+
+/* Slides */
+.mySlides {
+  display: none; /* Hide all slides initially */
+  text-align: center; /* Center the image */
+}
+
+.mySlides img {
+  width: 400px; /* Set a fixed width for consistency */
+  height: 400px; /* Match height to create a perfect circle */
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Ensure the image fits perfectly inside the circle */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for effect */
+  margin: 0 auto; /* Center the image */
+}
+
+/* Optional: Add a fading effect */
+.fade {
+  animation: fadeEffect 1s ease-in-out;
+}
+
+@keyframes fadeEffect {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+/* Projects Section */
+#projects {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+#projects h2 {
+  color: #004080;
+  margin-bottom: 15px;
+}
+
+/* Slideshow Container */
+.projects-slideshow-container {
+  position: relative;
+  max-width: 350px;
+  margin: 0 auto;
+  overflow: hidden; /* Hide overflowing slides */
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 10px;
+}
+
+/* Individual Slides */
+.project-slide {
+  display: none; /* Hidden by default */
+  text-align: center;
+}
+
+/* Project Logo */
+.project-logo {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Active Slide */
+.active-slide {
+  display: block;
+}
+/* Content Container */
+.content-container {
+  display: flex; /* Enable Flexbox */
+  justify-content: space-between; /* Space between sections */
+  align-items: stretch; /* Make the sections equal height */
+  gap: 20px; /* Add space between sections */
+  max-width: 1200px;
+  margin: 0 auto; /* Center the container */
+  padding: 20px;
+}
+
+/* About Me Section */
+#about {
+  flex: 1; /* Allow the section to grow equally */
+  background: #2a2a2a; /* Dark background */
+  color: #ffffff; /* Set text to white */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex; /* For internal alignment */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center content vertically */
+  min-height: 300px; /* Ensure both sections have at least this height */
+}
+
+#about h2 {
+  color: #ffffff; /* Make heading white */
+}
+
+#about p {
+  color: #ffffff; /* Make paragraph text white */
+}
+
+/* Projects Section */
+#projects {
+  background: #2a2a2a; /* Dark grey background */
+  color: #ffffff; /* White text */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+#projects h2 {
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+/* Slideshow Container */
+.projects-slideshow-container {
+  background-color: #444444;
+  position: relative;
+  width: 120%; /* Adjust to fit the inner box */
+  height: 450px; /* Fixed height */
+  overflow: hidden; /* Hide overflowing slides */
+}
+
+/* Individual Project Slide */
+.project-slide {
+  display: none; /* Hide slides by default */
+  text-align: center;
+  animation: fade 1s ease-in-out; /* Smooth fade transition */
+}
+
+.project-slide img {
+  width: 80px; /* Icon size */
+  height: auto;
+  margin: 0 auto 10px;
+  transition: transform 0.3s ease;
+}
+
+.project-slide img:hover {
+  transform: scale(1.1); /* Hover effect */
+}
+
+.project-slide p {
+  font-size: 0.9em;
+  color: #ffffff;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Active Slide */
+.project-slide.active-slide {
+  display: block;
+}
+
+/* Fade Animation */
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+/* Tech Stack Section */
+#tech-stack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh; /* Adjust vertical height */
+  width: 250px; /* Smaller width */
+  background-color: #1e1e1e; /* Dark background */
+}
+
+.tech-box {
+  background-color: #2a2a2a; /* Slightly lighter box background */
+  border-radius: 12px;
+  padding: 20px; /* Reduce padding */
+  max-width: 300px; /* Reduce box width */
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Smaller space between icons */
+  margin-bottom: 10px; /* Reduce bottom margin */
+}
+
+.icon img {
+  width: 40px; /* Smaller icons */
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.icon img:hover {
+  transform: scale(1.1); /* Add a hover effect */
+}
+
+.tech-box h3 {
+  font-size: 1.2em; /* Reduce heading size */
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.tech-box p {
+  font-size: 0.9em; /* Smaller text size */
+  line-height: 1.4;
+  color: #cfcfcf;
+}
